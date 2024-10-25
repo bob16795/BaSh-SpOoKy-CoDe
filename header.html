@@ -1,0 +1,19 @@
+HTTP/1.1 200
+Content-Type: text/html
+
+<h1>BaSSH prototype demo [REAL](Cops Called)</h1>
+<form action="https://test.test.com/" method="GET" onSubmit="return submitForm()">
+    <input type="text" name="command" id="command" placeholder="Enter your ssh command">
+    <input type="submit" class="submit" value="Submit">
+</form>
+<script>
+    function submitForm() {
+        location.href = "http://127.0.0.1:2280/" + document.getElementById("command").value;
+        return false;
+    }
+    function cls() {
+        location.href = "http://127.0.0.1:2280/";
+        return false;
+    }
+</script>
+<p>
